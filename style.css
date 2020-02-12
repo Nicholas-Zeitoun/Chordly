@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chord-box {
+  width: 750px;
+  height: 350px;
+  background-color: #EEE;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  height: 200px;
+}
+
+.major-keys {
+  display: flex;
+  width: 640px;
+  height: 200px;
+}
+
+.minor-keys {
+  display: flex;
+  width: 640px;
+  height: 200px;
+  position: absolute;
+
+}
+
+.group1 {
+  width: 240px;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.group2 {
+  width: 320px;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.key {
+  background-color: white;
+  width: 12.5%;
+  /*Border stuff*/
+  border-width: 2px;
+  border-style: solid;
+  border-color: #DDD;
+}
+
+.key:hover {
+  background-color: blue;
+}
+
+
+
+.m-key {
+  background-color: black;
+  width: 40px;
+  height: 120px;
+  /*Border stuff*/
+  border-width: 2px;
+  border-style: solid;
+  border-color: #DDD;
+  margin-left: 60px;
+}
+
+.second {
+  margin-left: 40px;
+}

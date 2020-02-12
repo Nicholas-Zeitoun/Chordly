@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chordly 🎹</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="selectors.css">
+  <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="chord-box">
+      <div class="keyboard">
+        <div class="major-keys">
+          <div class="key"></div>
+          <div class="key"></div>
+          <div class="key"></div>
+          <div class="key"></div>
+          <div class="key"></div>
+          <div class="key"></div>
+          <div class="key"></div>
+          <div class="key"></div>
+        </div>
+        <div class="minor-keys">
+          <dive class="group1">
+            <div class="m-key"></div>
+            <div class="m-key second"></div>
+          </dive>
+          <div class="group2">
+            <div class="m-key"></div>
+            <div class="m-key second"></div>
+            <div class="m-key second"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab" href="#" onclick="openTab(event, 'Recent')">C</button>
+        <button class="tab" href="#" onclick="openTab(event, 'Suggestions')">D</button>
+        <button class="tab" href="#" onclick="openTab(event, 'Find')">E</button>
+    </div>
+
+    <div class="notifications">
+      <!-- Reecnt Activity -->
+      <div id="Recent" class="tabcontent">
+        DERRRP1
+      </div>
+
+      <!-- sugestions -->
+      <div id="Suggestions" class="tabcontent">
+        DERRP2
+      </div>
+
+      <!-- Find Designers -->
+
+      <div id="Find" class="tabcontent">
+        <!-- Code one notification here -->
+        DERRP3
+      </div>
+    </div>
+
+    <div class="selector-box">
+      <ins class="scales_chords_api" chord="C(maj)" instrument="piano" output="sound"></ins>
+      <div class="chord-select">
+        <h4>C</h4>
+      </div>
+      <div class="chord-select">
+        <h4>CM</h4>
+      </div>
+      <div class="chord-select">
+        <h4>Cm</h4>
+      </div>
+      <div class="chord-select">
+        <h4>CM7</h4>
+      </div>
+      <div class="chord-select">
+        <h4>Cm7</h4>
+      </div>
+    </div>
+  </div>
+  <script src="main.js">
+    function openTab(evt, tabName) {
+      var i, tabcontent, tab;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tab = document.getElementsByClassName("tab");
+      for (i = 0; i < tab.length; i++) {
+        tab[i].className = tab[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html>
