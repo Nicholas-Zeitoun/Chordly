@@ -1,3 +1,3 @@
 # Chordly
 
-Visit site at: 
+Visit site at: https://nicholas-zeitoun.github.io/Chordly/
