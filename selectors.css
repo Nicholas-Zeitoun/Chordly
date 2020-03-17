@@ -3,7 +3,6 @@
   margin-top: 16px;
   display: flex;
   justify-content: center;
-
 }
 
 .chord-select {
@@ -20,9 +19,15 @@
   transition: 0.3s;
 }
 
+.unpressed {
+  background-color: #FFF;
+}
+
 .pressed {
   background-color: #79DCC2;
+  transition: 0.5s;
 }
+
 
 .chord-select:hover {
   background-color: #EEE;
